@@ -120,7 +120,6 @@ GameObject:
   - component: {fileID: 6979789315634311263}
   - component: {fileID: 4997000728486459172}
   - component: {fileID: 8796372547514386671}
-  - component: {fileID: 900804603210805024}
   - component: {fileID: 9179585608954421194}
   - component: {fileID: 4747563098556473295}
   - component: {fileID: 6524942665914056220}
@@ -131,7 +130,6 @@ GameObject:
   - component: {fileID: 2166701756489536159}
   - component: {fileID: 7180049607840355305}
   - component: {fileID: 4241549201205280168}
-  - component: {fileID: 6702609619966852413}
   - component: {fileID: 2893168923997086367}
   m_Layer: 13
   m_Name: Goblin
@@ -292,46 +290,6 @@ MonoBehaviour:
   ObstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &900804603210805024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8175365461053730118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a07c6668aa55403790d27b575279549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  InitialWeapon: {fileID: 0}
-  CanPickupWeapons: 1
-  WeaponUseFeedback: {fileID: 0}
-  WeaponAttachment: {fileID: 0}
-  ProjectileSpawn: {fileID: 0}
-  AutomaticallyBindAnimator: 1
-  AmmoDisplayID: 0
-  AutoIK: 1
-  ContinuousPress: 0
-  GettingHitInterruptsAttack: 0
-  UseSecondaryAxisThresholdToShoot: 0
-  ForceWeaponAimControl: 0
-  ForcedWeaponAimControl: 1
-  ForceAlwaysShoot: 0
-  BufferInput: 0
-  NewInputExtendsBuffer: 0
-  MaximumBufferDuration: 0.25
-  RequiresPerfectTile: 0
-  CurrentWeapon: {fileID: 0}
 --- !u!114 &9179585608954421194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,25 +696,6 @@ MonoBehaviour:
   Label: 
   UseMinimumXDistance: 1
   MinimumXDistance: 0.1
---- !u!114 &6702609619966852413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8175365461053730118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b1affdc8ddb97d40b6a8b805c494909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  TargetHandleWeaponAbility: {fileID: 0}
-  AimOrigin: 0
-  FaceTarget: 0
-  AimAtTarget: 0
-  OnlyAimWhenInState: 0
 --- !u!114 &2893168923997086367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,14 +723,6 @@ MonoBehaviour:
     Actions:
       array:
       - {fileID: 4241549201205280168}
-    Transitions:
-      array:
-      - Decision: {fileID: 0}
-        TrueState: 
-        FalseState: 
-  - StateName: Attacking
-    Actions:
-      array: []
     Transitions:
       array: []
   TimeInThisState: 0

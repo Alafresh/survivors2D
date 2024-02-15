@@ -7442,6 +7442,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1582672033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1279287630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00031259283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201129828444408654, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279826695300404299, guid: 006b6d17348e72c4ca0fe5dddc5400cf,
+        type: 3}
+      propertyPath: m_Name
+      value: KoalaMagneticCoin (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 006b6d17348e72c4ca0fe5dddc5400cf, type: 3}
 --- !u!4 &1283423288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4798570233257244, guid: 581ea2e7a3383fa4eac2d162354979b5,
@@ -12816,3 +12889,4 @@ SceneRoots:
   - {fileID: 3641487861034673049}
   - {fileID: 2435530656150855960}
   - {fileID: 4453688657514324410}
+  - {fileID: 1279287630}

@@ -17979,7 +17979,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000017358f5f
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -26861,7 +26861,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1324478630}
     m_Modifications:
     - target: {fileID: 312664397178562751, guid: 13028c48e88757a44ab254346d24ce84,
         type: 3}
@@ -26917,6 +26917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160095202723792703, guid: 13028c48e88757a44ab254346d24ce84,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27008,6 +27013,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 341751629}
+  - {fileID: 1611127329}
   m_Father: {fileID: 644757074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478859271
@@ -53007,6 +53013,12 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
   m_UseDelaunayMesh: 0
+--- !u!4 &1611127329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2313900659149459287, guid: 13028c48e88757a44ab254346d24ce84,
+    type: 3}
+  m_PrefabInstance: {fileID: 915545669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1620048011
 GameObject:
   m_ObjectHideFlags: 0
@@ -54418,4 +54430,3 @@ SceneRoots:
   - {fileID: 1918232351}
   - {fileID: 4210879075341174372}
   - {fileID: 644757074}
-  - {fileID: 915545669}

@@ -180,6 +180,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 98ea2306937b91e4a875db977e003749,
         type: 3}
+    - target: {fileID: 212519941297183702, guid: 78d526a077e4aa341b992c1070338a64,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 212519941297183702, guid: 78d526a077e4aa341b992c1070338a64,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 212519941297183702, guid: 78d526a077e4aa341b992c1070338a64,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1603220759
+      objectReference: {fileID: 0}
+    - target: {fileID: 212519941297183702, guid: 78d526a077e4aa341b992c1070338a64,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8063560708483998443, guid: 78d526a077e4aa341b992c1070338a64,
         type: 3}
       propertyPath: managedReferences[1].GameObjectToInstantiate

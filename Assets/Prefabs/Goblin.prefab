@@ -154,8 +154,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Color: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}
+  m_Intensity: 1.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000e9f72b6bdfb2e38817358f5f9f97d30259625239
@@ -197,15 +197,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3417406211932252849}
-  - component: {fileID: 2851895002610748940}
   - component: {fileID: 5800371996370783685}
   - component: {fileID: 6979789315634311263}
   - component: {fileID: 4997000728486459172}
   - component: {fileID: 8796372547514386671}
+  - component: {fileID: 2851895002610748940}
   - component: {fileID: 9179585608954421194}
   - component: {fileID: 4747563098556473295}
-  - component: {fileID: 6524942665914056220}
   - component: {fileID: 7022671514282174734}
+  - component: {fileID: 6524942665914056220}
   - component: {fileID: 7471674261961888467}
   - component: {fileID: 6360818960925670011}
   - component: {fileID: 3790008942200336647}
@@ -238,31 +238,6 @@ Transform:
   - {fileID: 9174055795934233496}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2851895002610748940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8175365461053730118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe81ad80cb743b408fa90b048ad597f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterDimension: 0
-  CharacterType: 1
-  PlayerID: 
-  CharacterAnimator: {fileID: 6611620401492924689}
-  UseDefaultMecanim: 1
-  RunAnimatorSanityChecks: 0
-  DisableAnimatorLogs: 1
-  CharacterModel: {fileID: 4102263291771583503}
-  CharacterHealth: {fileID: 0}
-  SendStateChangeEvents: 1
-  AdditionalAbilityNodes: []
-  CharacterBrain: {fileID: 0}
-  OptimizeForMobile: 1
 --- !u!50 &5800371996370783685
 Rigidbody2D:
   serializedVersion: 4
@@ -374,6 +349,31 @@ MonoBehaviour:
   ObstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2851895002610748940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175365461053730118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe81ad80cb743b408fa90b048ad597f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterDimension: 0
+  CharacterType: 1
+  PlayerID: 
+  CharacterAnimator: {fileID: 6611620401492924689}
+  UseDefaultMecanim: 1
+  RunAnimatorSanityChecks: 0
+  DisableAnimatorLogs: 1
+  CharacterModel: {fileID: 4102263291771583503}
+  CharacterHealth: {fileID: 0}
+  SendStateChangeEvents: 1
+  AdditionalAbilityNodes: []
+  CharacterBrain: {fileID: 0}
+  OptimizeForMobile: 1
 --- !u!114 &9179585608954421194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +430,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  Movement: 3
+  Movement: 1
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
@@ -443,6 +443,30 @@ MonoBehaviour:
   WalkParticles: []
   TouchTheGroundParticles: []
   TouchTheGroundSfx: []
+--- !u!114 &7022671514282174734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175365461053730118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d103439fc2940e347937487a70ea01e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RunSpeed: 16
+  AutoRun: 0
+  AutoRunThreshold: 0.6
 --- !u!114 &6524942665914056220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,30 +512,6 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
---- !u!114 &7022671514282174734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8175365461053730118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d103439fc2940e347937487a70ea01e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  RunSpeed: 16
-  AutoRun: 0
-  AutoRunThreshold: 0.6
 --- !u!114 &7471674261961888467
 MonoBehaviour:
   m_ObjectHideFlags: 0

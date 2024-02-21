@@ -6655,9 +6655,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.074944496, y: -0.21258658}
+  m_Offset: {x: -0.1, y: -0.39}
   serializedVersion: 2
-  m_Radius: 0.3688116
+  m_Radius: 0.2
 --- !u!114 &599446606136654535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6835,7 +6835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 8192
+    m_Bits: 9216
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 10

@@ -9,6 +9,10 @@ public class MenuScene : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+    public void MultiplayerBtn()
+    {
+        SceneManager.LoadScene("MultiplayerPrueba");
+    }
     public void MenuBtn()
     {
         SceneManager.LoadScene("MenuScene");
